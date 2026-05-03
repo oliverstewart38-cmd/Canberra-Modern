@@ -396,7 +396,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  colour:var(--cream)
+  color:var(--creamcream)
 }
 
 .footer-nav a {
@@ -493,12 +493,12 @@ footer {
 }
 
 .social-heading {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: var(--off-white);
-  text-align: right;
+     font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--off-white);
+
 }
 
 .footer-social-icons {
@@ -793,5 +793,4 @@ footer {
     width: 64px;
     height: 64px;
   }
-  .back-to-top-icon
 }
