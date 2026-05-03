@@ -571,8 +571,8 @@ footer {
 
 .mobile-nav-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  bottom: 24px;
+  left: 20px;
   background: none;
   border: none;
   color: var(--off-white);
@@ -851,7 +851,7 @@ footer {
   }
 
   .logo {
-    font-size: 26px;
+    font-size: 40px;
     line-height: 32px;
   }
 
@@ -998,6 +998,91 @@ footer {
   .see-more-btn span {
     font-size: 10px;
     letter-spacing: 1px;
+  }
+
+  /* ---- PAGE HERO ---- */
+  .page-hero {
+    padding-bottom: 32px;
+  }
+
+  .page-hero-content {
+    padding: 24px 20px 0;
+  }
+
+  .page-title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  /* ---- ABOUT SECTIONS ---- */
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about-text {
+    padding: 32px 20px;
+  }
+
+  .about-heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .about-image {
+    height: 280px;
+  }
+
+  /* ---- PARTNER ROWS ---- */
+  .partners-inner {
+    padding: 32px 0;
+  }
+
+  .partners-heading {
+    padding: 0 20px 24px;
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .partner-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 6px;
+    min-height: unset;
+  }
+
+  .partner-divider {
+    display: none;
+  }
+
+  .partner-name {
+    width: 100%;
+  }
+
+  .partner-desc {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+  }
+
+  .visit-btn {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  /* ---- SIMILAR ORGANISATIONS ---- */
+  .orgs-inner {
+    padding: 32px 20px;
+  }
+
+  .orgs-heading {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .org-grid {
+    grid-template-columns: 1fr;
   }
 
   /* ---- FOOTER ---- */
