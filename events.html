@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Canberra Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span class="logo-regular">Canberra</span><span class="logo-bold"> Modern</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="events.html" class="nav-active">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+    <div class="page-hero-content">
+      <h1 class="page-title">EVENTS</h1>
+    </div>
+  </section>
+
+  <!-- ===== UPCOMING EVENTS ===== -->
+  <section class="events-section light-bg">
+    <div class="events-inner">
+      <h2 class="events-heading dark">UPCOMING</h2>
+      <div class="events-grid">
+
+        <div class="event-card-large">
+          <div class="event-card-image">
+            <img src="assets/images/wineevent.png" alt="Shine Dome Cocktails">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag">16.05.2026</span>
+            <p class="event-title-med">Shine Dome Cocktails</p>
+            <p class="event-venue">Shine Dome, ANU</p>
+            <a href="#" class="register-btn">REGISTER</a>
+          </div>
+        </div>
+
+        <div class="event-card-large">
+          <div class="event-card-image">
+            <img src="assets/images/kidsmodelmaking.png" alt="Kids Model Making">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag">15.03.2026</span>
+            <p class="event-title-med">Kids Model Making</p>
+            <p class="event-venue">The Mill Architecture &amp; Design</p>
+            <a href="#" class="register-btn">REGISTER</a>
+          </div>
+        </div>
+
+        <div class="event-card-large">
+          <div class="event-card-image">
+            <img src="assets/images/twighlightatchurchillhouse.png" alt="Twilight at Churchill House">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag">07.07.2026</span>
+            <p class="event-title-med">Twilight at Churchill House</p>
+            <p class="event-venue">Churchill House</p>
+            <a href="#" class="register-btn">REGISTER</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREVIOUS EVENTS ===== -->
+  <section class="events-section dark-bg">
+    <div class="events-inner">
+      <h2 class="events-heading light">Previous</h2>
+      <div class="events-grid">
+
+        <div class="event-card-large past">
+          <div class="event-card-image">
+            <span class="past-event-label">PAST EVENT</span>
+            <img src="assets/images/events-dinner.jpg" alt="Dinner at Bruce Hall">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag light">19.09.2025</span>
+            <p class="event-title-med light">Dinner at Bruce Hall</p>
+            <p class="event-venue">Bruce Hall, Davey Road, ANU</p>
+            <a href="#" class="view-highlights">View Highlights →</a>
+          </div>
+        </div>
+
+        <div class="event-card-large past">
+          <div class="event-card-image">
+            <span class="past-event-label">PAST EVENT</span>
+            <img src="assets/images/events-sunset.jpg" alt="Sunset at Yamaroshi">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag light">06.09.2025</span>
+            <p class="event-title-med light">Sunset at Yamaroshi</p>
+            <p class="event-venue">Yarralumla, ACT</p>
+            <a href="#" class="view-highlights">View Highlights →</a>
+          </div>
+        </div>
+
+        <div class="event-card-large past">
+          <div class="event-card-image">
+            <span class="past-event-label">PAST EVENT</span>
+            <img src="assets/images/events-brunch.jpg" alt="Brutalist Brunch">
+          </div>
+          <div class="event-card-body">
+            <span class="event-date-tag light">22.06.2025</span>
+            <p class="event-title-med light">Brutalist Brunch</p>
+            <p class="event-venue">Northbourne Avenue, Canberra</p>
+            <a href="#" class="view-highlights">View Highlights →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENT HIGHLIGHTS ===== -->
+  <section class="events-section light-bg">
+    <div class="highlights-inner">
+      <h2 class="events-heading dark">Event Highlights</h2>
+      <div class="highlights-carousel" id="highlightsCarousel">
+        <div class="highlights-track" id="highlightsTrack">
+          <div class="highlight-slide">
+            <img src="assets/images/events-highlight1.jpg" alt="Event highlight">
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/images/events-highlight2.jpg" alt="Event highlight">
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/images/events-highlight3.jpg" alt="Event highlight">
+          </div>
+        </div>
+        <button class="highlights-next" id="highlightsNext" aria-label="Next highlight">
+          <img src="assets/images/seemoreright.svg" alt="">
+        </button>
+      </div>
+      <div class="highlights-dots" id="highlightsDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="newsletter">
+    <div class="footer-top">
+      <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="assets/images/seemoreright.svg" alt="" class="back-to-top-icon">
+        <span>BACK TO TOP</span>
+      </button>
+    </div>
+
+    <div class="footer-body">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="events.html">Events</a>
+        <a href="media.html">Media</a>
+      </nav>
+
+      <div class="footer-newsletter">
+        <p class="newsletter-heading">NEVER MISS A BEAT —<br>SIGN UP FOR OUR NEWSLETTER</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email" class="newsletter-input" aria-label="Email address">
+          <button type="submit" class="newsletter-submit" aria-label="Submit">
+            <img src="assets/images/seemoreright.svg" alt="Submit" class="submit-arrow">
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-social">
+        <p class="social-heading">NEVER MISS AN UPDATE —<br>FOLLOW US ON OUR SOCIALS</p>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/images/instagram.svg" alt="Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/images/facebook.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-copyright">Canberra Modern Incorporated<br>All Rights Reserved</p>
+  </footer>
+
+  <!-- Mobile hamburger button -->
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile full-screen nav overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">&#x2715;</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="events.html">Events</a>
+      <a href="media.html">Media</a>
+    </nav>
+  </div>
+
+  <script src="assets/js/javascript.js"></script>
+</body>
+</html>

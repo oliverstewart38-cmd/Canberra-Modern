@@ -954,6 +954,219 @@ footer {
   background-color: var(--off-white);
 }
 
+/* ===== EVENTS PAGE ===== */
+.events-section.light-bg { background-color: var(--cream); }
+.events-section.dark-bg  { background-color: var(--charcoal); }
+
+.events-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 28px 60px;
+}
+
+.events-heading {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: -0.5px;
+  margin-bottom: 32px;
+}
+.events-heading.dark  { color: var(--stone); }
+.events-heading.light { color: var(--off-white); }
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Event card */
+.event-card-large {
+  border: 4px solid var(--stone);
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #e8e6df;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card-large.past {
+  background-color: #2e2e2c;
+  border-color: var(--off-white);
+}
+
+.event-card-image {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.event-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.past-event-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--stone);
+  color: var(--off-white);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.event-card-body {
+  padding: 12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.event-date-tag {
+  display: inline-block;
+  background-color: #2e2e2b;
+  color: var(--off-white);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 2px 16px;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+.event-date-tag.light {
+  background-color: var(--off-white);
+  color: #111110;
+}
+
+.event-title-med {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--stone);
+}
+
+.event-title-med.light { color: var(--off-white); }
+
+.event-venue {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #8a8a84;
+}
+
+.register-btn {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: auto;
+  background-color: #2e2e2b;
+  color: var(--off-white);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+.register-btn:hover { opacity: 0.8; }
+
+.view-highlights {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #8a8a84;
+  margin-top: auto;
+  transition: opacity 0.2s;
+}
+
+.view-highlights:hover { opacity: 0.7; }
+
+/* Highlights carousel */
+.highlights-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 28px 60px;
+}
+
+.highlights-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.highlights-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.highlight-slide {
+  flex: 0 0 100%;
+  height: 600px;
+}
+
+.highlight-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.highlights-next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: opacity 0.2s;
+}
+
+.highlights-next:hover { opacity: 0.7; }
+
+.highlights-next img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.highlights-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.highlights-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--tan);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.highlights-dot.active { background-color: var(--stone); }
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
 
@@ -1135,6 +1348,26 @@ footer {
   }
 
   .building-photo {
+    height: 280px;
+  }
+
+  /* ---- EVENTS ---- */
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .events-inner,
+  .highlights-inner {
+    padding: 32px 20px 40px;
+  }
+
+  .events-heading {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .highlight-slide {
     height: 280px;
   }
 
