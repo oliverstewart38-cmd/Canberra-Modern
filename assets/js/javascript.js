@@ -42,6 +42,52 @@ document.querySelectorAll('.mobile-nav-links a').forEach(link => {
   });
 });
 
+// Building showcase — scroll dots + drag to scroll
+const buildingScroll = document.getElementById('buildingScroll');
+const scrollDotsContainer = document.getElementById('scrollDots');
+
+if (buildingScroll && scrollDotsContainer) {
+  const cards = buildingScroll.querySelectorAll('.building-card');
+
+  // Build dots
+  cards.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('scroll-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      buildingScroll.scrollTo({ left: cards[i].offsetLeft - 28, behavior: 'smooth' });
+    });
+    scrollDotsContainer.appendChild(dot);
+  });
+
+  // Update active dot on scroll
+  buildingScroll.addEventListener('scroll', () => {
+    const dots = scrollDotsContainer.querySelectorAll('.scroll-dot');
+    let closest = 0;
+    let minDist = Infinity;
+    cards.forEach((card, i) => {
+      const dist = Math.abs(card.offsetLeft - buildingScroll.scrollLeft - 28);
+      if (dist < minDist) { minDist = dist; closest = i; }
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === closest));
+  });
+
+  // Drag to scroll
+  let isDown = false, startX, scrollStart;
+  buildingScroll.addEventListener('mousedown', e => {
+    isDown = true;
+    startX = e.pageX - buildingScroll.offsetLeft;
+    scrollStart = buildingScroll.scrollLeft;
+  });
+  buildingScroll.addEventListener('mouseleave', () => isDown = false);
+  buildingScroll.addEventListener('mouseup', () => isDown = false);
+  buildingScroll.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    buildingScroll.scrollLeft = scrollStart - (e.pageX - buildingScroll.offsetLeft - startX);
+  });
+}
+
 // Carousel: see-more arrow scrolls to next card on mobile
 document.querySelectorAll('.see-more-btn').forEach(btn => {
   btn.addEventListener('click', function (e) {

@@ -830,6 +830,122 @@ footer {
   margin-left: 0;
 }
 
+/* ===== ARCHITECTURE BUILDING SHOWCASE ===== */
+.arch-showcase {
+  background-color: var(--charcoal);
+  padding: 40px 0 60px;
+}
+
+.building-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 28px 32px;
+  cursor: grab;
+}
+
+.building-scroll-wrapper:active {
+  cursor: grabbing;
+}
+
+.building-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.building-scroll {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+}
+
+.building-card {
+  width: 680px;
+  flex-shrink: 0;
+}
+
+.building-number {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--off-white);
+  margin-bottom: 8px;
+}
+
+.building-name-large {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  letter-spacing: -1px;
+  color: var(--off-white);
+  margin-bottom: 12px;
+}
+
+.at-risk-label {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--off-white);
+  margin-bottom: 16px;
+}
+
+.building-photo {
+  width: 100%;
+  height: 480px;
+  border: 4px solid var(--off-white);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.building-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.building-caption-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+  color: var(--off-white);
+  margin-bottom: 4px;
+}
+
+.building-caption-meta {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--off-white);
+}
+
+/* Scroll progress dots */
+.scroll-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 28px;
+  margin-top: 8px;
+}
+
+.scroll-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--slate);
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.scroll-dot.active {
+  background-color: var(--off-white);
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
 
@@ -998,6 +1114,20 @@ footer {
   .see-more-btn span {
     font-size: 10px;
     letter-spacing: 1px;
+  }
+
+  /* ---- BUILDING SHOWCASE ---- */
+  .building-card {
+    width: 85vw;
+  }
+
+  .building-name-large {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .building-photo {
+    height: 280px;
   }
 
   /* ---- PAGE HERO ---- */

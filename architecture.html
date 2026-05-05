@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture — Canberra Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span class="logo-regular">Canberra</span><span class="logo-bold"> Modern</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="architecture.html" class="nav-active">Architecture</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+    <div class="page-hero-content">
+      <h1 class="page-title">OUR FAVOURITES</h1>
+    </div>
+  </section>
+
+  <!-- ===== INTRO SECTION ===== -->
+  <section class="about-section light-bg">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2 class="about-heading dark">Our 20 top Mid (&amp; Late) Century Modern Buildings</h2>
+        <p class="about-body dark">20 buildings might seem a lot, but in a city that grew up in the mid-century period that showcases work from some of Australia's most renowned architects, it is almost impossible to narrow the list to just 20! While many on the list are obvious and iconic, we also wanted to include a few buildings that are lesser known or are at risk of being lost altogether or visually lost in the midst of adjacent developments or inappropriate renovation.</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/arch-feature.jpg" alt="Canberra mid-century modern architecture">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUILDING SHOWCASE ===== -->
+  <section class="arch-showcase">
+    <div class="building-scroll-wrapper" id="buildingScroll">
+      <div class="building-scroll">
+
+        <div class="building-card">
+          <p class="building-number">N. 20</p>
+          <h2 class="building-name-large">National Library of Australia</h2>
+          <div class="building-photo">
+            <img src="assets/images/nationallibrary.png" alt="National Library of Australia">
+          </div>
+          <p class="building-caption-name">National Library of Australia</p>
+          <p class="building-caption-meta">Bunning and Madden, 1968</p>
+        </div>
+
+        <div class="building-card">
+          <p class="building-number">N. 19</p>
+          <h2 class="building-name-large">Churchill House</h2>
+          <p class="at-risk-label">AT RISK</p>
+          <div class="building-photo">
+            <img src="assets/images/twighlightatchurchillhouse.png" alt="Churchill House">
+          </div>
+          <p class="building-caption-name">Churchill House</p>
+          <p class="building-caption-meta">Robin Boyd, 1971</p>
+        </div>
+
+        <div class="building-card">
+          <p class="building-number">N. 18</p>
+          <h2 class="building-name-large">University House</h2>
+          <div class="building-photo">
+            <img src="assets/images/arch-universityhouse.jpg" alt="University House">
+          </div>
+          <p class="building-caption-name">University House</p>
+          <p class="building-caption-meta">Brian Lewis, 1954</p>
+        </div>
+
+        <div class="building-card">
+          <p class="building-number">N. 17</p>
+          <h2 class="building-name-large">Callam Offices</h2>
+          <p class="at-risk-label">AT RISK</p>
+          <div class="building-photo">
+            <img src="assets/images/callumoffice.png" alt="Callam Offices">
+          </div>
+          <p class="building-caption-name">Callam Offices</p>
+          <p class="building-caption-meta">John Andrews, 1977–81</p>
+        </div>
+
+        <div class="building-card">
+          <p class="building-number">N. 16</p>
+          <h2 class="building-name-large">The Shine Dome</h2>
+          <div class="building-photo">
+            <img src="assets/images/shinedome.jpg" alt="The Shine Dome">
+          </div>
+          <p class="building-caption-name">The Shine Dome</p>
+          <p class="building-caption-meta">Cobden Parkes, 1959</p>
+        </div>
+
+        <div class="building-card">
+          <p class="building-number">N. 15</p>
+          <h2 class="building-name-large">Australian War Memorial</h2>
+          <div class="building-photo">
+            <img src="assets/images/warmemorial.png" alt="Australian War Memorial">
+          </div>
+          <p class="building-caption-name">Australian War Memorial</p>
+          <p class="building-caption-meta">Emil Sodersten &amp; John Crust, 1941</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll progress dots -->
+    <div class="scroll-dots" id="scrollDots"></div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="newsletter">
+    <div class="footer-top">
+      <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="assets/images/seemoreright.svg" alt="" class="back-to-top-icon">
+        <span>BACK TO TOP</span>
+      </button>
+    </div>
+
+    <div class="footer-body">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="events.html">Events</a>
+        <a href="media.html">Media</a>
+      </nav>
+
+      <div class="footer-newsletter">
+        <p class="newsletter-heading">NEVER MISS A BEAT —<br>SIGN UP FOR OUR NEWSLETTER</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email" class="newsletter-input" aria-label="Email address">
+          <button type="submit" class="newsletter-submit" aria-label="Submit">
+            <img src="assets/images/seemoreright.svg" alt="Submit" class="submit-arrow">
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-social">
+        <p class="social-heading">NEVER MISS AN UPDATE —<br>FOLLOW US ON OUR SOCIALS</p>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/images/instagram.svg" alt="Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/images/facebook.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-copyright">Canberra Modern Incorporated<br>All Rights Reserved</p>
+  </footer>
+
+  <!-- Mobile hamburger button -->
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile full-screen nav overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">&#x2715;</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="events.html">Events</a>
+      <a href="media.html">Media</a>
+    </nav>
+  </div>
+
+  <script src="assets/js/javascript.js"></script>
+</body>
+</html>
