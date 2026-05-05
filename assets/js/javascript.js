@@ -1,3 +1,4 @@
+
 // Back to top
 const backToTop = document.querySelector('.back-to-top');
 if (backToTop) {
@@ -42,9 +43,20 @@ document.querySelectorAll('.mobile-nav-links a').forEach(link => {
   });
 });
 
-// Building showcase — scroll dots + drag to scroll
+// Building showcase — scroll dots, drag to scroll, wheel to scroll
 const buildingScroll = document.getElementById('buildingScroll');
 const scrollDotsContainer = document.getElementById('scrollDots');
+
+if (buildingScroll) {
+  buildingScroll.addEventListener('wheel', function (e) {
+    const delta = e.deltaY + e.deltaX;
+    const atEnd = this.scrollLeft + this.offsetWidth >= this.scrollWidth - 2;
+    const atStart = this.scrollLeft <= 0;
+    if ((delta > 0 && atEnd) || (delta < 0 && atStart)) return;
+    e.preventDefault();
+    this.scrollLeft += delta;
+  }, { passive: false });
+}
 
 if (buildingScroll && scrollDotsContainer) {
   const cards = buildingScroll.querySelectorAll('.building-card');

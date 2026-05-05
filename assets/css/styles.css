@@ -841,7 +841,7 @@ footer {
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding: 0 28px 32px;
+  padding-bottom: 32px;
   cursor: grab;
 }
 
@@ -857,11 +857,19 @@ footer {
   display: flex;
   gap: 60px;
   width: max-content;
-}
+  padding-left: max(28px, calc(50vw - 692px));
+  padding-right: max(28px, calc(50vw - 692px));}
 
 .building-card {
   width: 680px;
   flex-shrink: 0;
+}
+
+.building-card-top {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .building-number {
