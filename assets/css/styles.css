@@ -1102,14 +1102,22 @@ footer {
 
 /* Highlights carousel */
 .highlights-inner {
-  max-width: 1440px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 48px 28px 60px;
 }
 
 .highlights-carousel {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.highlights-viewport {
   overflow: hidden;
+  flex: 1;
 }
 
 .highlights-track {
@@ -1119,7 +1127,7 @@ footer {
 
 .highlight-slide {
   flex: 0 0 100%;
-  height: 600px;
+  height: 560px;
 }
 
 .highlight-slide img {
@@ -1128,31 +1136,69 @@ footer {
   object-fit: cover;
 }
 
+.highlights-prev,
 .highlights-next {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
   transition: opacity 0.2s;
 }
 
+.highlights-prev:hover,
 .highlights-next:hover { opacity: 0.7; }
+
+.highlights-prev img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
 
 .highlights-next img {
   width: 100%;
   height: 100%;
-  filter: brightness(0) invert(1);
 }
 
+/* Dot progress bar — circles on a line */
 .highlights-dots {
   display: flex;
-  gap: 8px;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlights-dots::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: var(--stone);
+  transform: translateY(-50%);
+}
+
+.highlights-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--stone);
+  background-color: var(--cream);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.highlights-dot.active {
+  background-color: var(--stone);
 }
 
 .highlights-dot {

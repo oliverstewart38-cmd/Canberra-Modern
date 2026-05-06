@@ -104,6 +104,7 @@ if (buildingScroll && scrollDotsContainer) {
 const highlightsTrack = document.getElementById('highlightsTrack');
 const highlightsDots = document.getElementById('highlightsDots');
 const highlightsNext = document.getElementById('highlightsNext');
+const highlightsPrev = document.getElementById('highlightsPrev');
 
 if (highlightsTrack && highlightsDots && highlightsNext) {
   const slides = highlightsTrack.querySelectorAll('.highlight-slide');
@@ -126,6 +127,7 @@ if (highlightsTrack && highlightsDots && highlightsNext) {
   }
 
   highlightsNext.addEventListener('click', () => goTo(current + 1));
+  if (highlightsPrev) highlightsPrev.addEventListener('click', () => goTo(current - 1));
 }
 
 // Carousel: see-more arrow scrolls to next card on mobile

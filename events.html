@@ -87,8 +87,8 @@
           <div class="event-card-body">
             <span class="event-date-tag light">19.09.2025</span>
             <p class="event-title-med light">Dinner at Bruce Hall</p>
-            <p class="event-venue">Bruce Hall, Davey Road, ANU</p>
-            <a href="#" class="view-highlights">View Highlights →</a>
+            <p class= "event-venue">Bruce Hall, Davey Road, ANU</p>
+            <a  class="view-highlights">View Highlights →</a>
           </div>
         </div>
 
@@ -124,18 +124,23 @@
 
   <!-- ===== EVENT HIGHLIGHTS ===== -->
   <section class="events-section light-bg">
-    <div class="highlights-inner">
+    <div class="events-inner">
       <h2 class="events-heading dark">Event Highlights</h2>
       <div class="highlights-carousel" id="highlightsCarousel">
-        <div class="highlights-track" id="highlightsTrack">
-          <div class="highlight-slide">
-            <img src="assets/images/events-highlight1.jpg" alt="Event highlight">
-          </div>
-          <div class="highlight-slide">
-            <img src="assets/images/events-highlight2.jpg" alt="Event highlight">
-          </div>
-          <div class="highlight-slide">
-            <img src="assets/images/events-highlight3.jpg" alt="Event highlight">
+        <button class="highlights-prev" id="highlightsPrev" aria-label="Previous highlight">
+          <img src="assets/images/seemoreright.svg" alt="">
+        </button>
+        <div class="highlights-viewport">
+          <div class="highlights-track" id="highlightsTrack">
+            <div class="highlight-slide">
+              <img src="assets/images/eventimage1.jpg" alt="Event highlight">
+            </div>
+            <div class="highlight-slide">
+              <img src="assets/images/eventimage2.jpg" alt="Event highlight">
+            </div>
+            <div class="highlight-slide">
+              <img src="assets/images/eventimage3.jpg" alt="Event highlight">
+            </div>
           </div>
         </div>
         <button class="highlights-next" id="highlightsNext" aria-label="Next highlight">
@@ -143,7 +148,7 @@
         </button>
       </div>
       <div class="highlights-dots" id="highlightsDots"></div>
-    </div>
+    </div><!-- /.events-inner -->
   </section>
 
   <!-- ===== FOOTER ===== -->
@@ -174,20 +179,21 @@
         </form>
       </div>
 
+      <!-- Social -->
       <div class="footer-social">
         <p class="social-heading">NEVER MISS AN UPDATE —<br>FOLLOW US ON OUR SOCIALS</p>
         <div class="footer-social-icons">
           <a href="#" aria-label="Instagram">
-            <img src="assets/images/instagram.svg" alt="Instagram">
+            <img src="assets/images/instagramlogo.svg" alt="Instagram">
           </a>
           <a href="#" aria-label="Facebook">
-            <img src="assets/images/facebook.svg" alt="Facebook">
+            <img src="assets/images/facebooklogo.svg" alt="Facebook">
           </a>
         </div>
       </div>
     </div>
 
-    <p class="footer-copyright">Canberra Modern Incorporated<br>All Rights Reserved</p>
+    <p class="footer-copyright">This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2026.<br>Canberra Modern Incorporated<br>All Rights Reserved<br></p>
   </footer>
 
   <!-- Mobile hamburger button -->
