@@ -141,6 +141,27 @@ if (highlightsTrack && highlightsDots && highlightsNext) {
   }, { passive: true });
 }
 
+// Podcast carousel
+const podcastTrack = document.getElementById('podcastTrack');
+const podcastNext = document.getElementById('podcastNext');
+const podcastPrev = document.getElementById('podcastPrev');
+
+if (podcastTrack && podcastNext && podcastPrev) {
+  const cards = podcastTrack.querySelectorAll('.podcast-card');
+  let podcastIndex = 0;
+  const visibleCount = 3;
+  const maxIndex = cards.length - visibleCount;
+
+  function podcastGoTo(index) {
+    podcastIndex = Math.max(0, Math.min(index, maxIndex));
+    const cardWidth = cards[0].offsetWidth + 28;
+    podcastTrack.style.transform = `translateX(-${podcastIndex * cardWidth}px)`;
+  }
+
+  podcastNext.addEventListener('click', () => podcastGoTo(podcastIndex + 1));
+  podcastPrev.addEventListener('click', () => podcastGoTo(podcastIndex - 1));
+}
+
 // Carousel: see-more arrow scrolls to next card on mobile
 document.querySelectorAll('.see-more-btn').forEach(btn => {
   btn.addEventListener('click', function (e) {

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media — Canberra Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span class="logo-regular">Canberra</span><span class="logo-bold"> Modern</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html" class="nav-active">Media</a></li>
+      </ul>
+    </nav>
+    <div class="page-hero-content">
+      <h1 class="page-title">MEDIA</h1>
+    </div>
+  </section>
+
+  <!-- ===== PODCASTS SECTION ===== -->
+  <section class="podcast-section">
+    <div class="events-inner">
+      <h2 class="podcast-section-heading">PODCASTS</h2>
+      <p class="podcast-featured-title">CM's Architecture Tour on ABC Radio</p>
+
+      <div class="podcast-carousel-wrapper">
+        <button class="podcast-arrow podcast-prev" id="podcastPrev" aria-label="Previous">
+          <img src="assets/images/seemoreright.svg" alt="" class="arrow-light arrow-flip">
+        </button>
+
+        <div class="podcast-viewport">
+          <div class="podcast-track" id="podcastTrack">
+
+            <div class="podcast-card">
+              <div class="podcast-card-image">
+                <img src="assets/images/modernhouse.png" alt="Benjamin House">
+              </div>
+              <div class="podcast-card-body">
+                <span class="podcast-ep-tag">Episode 18</span>
+                <h3 class="podcast-card-title">Benjamin House</h3>
+                <p class="podcast-card-desc">Its iconic round shape, mission brown detailing and projecting blade walls make it distinctive from the street.</p>
+                <a href="#" class="podcast-listen-btn">LISTEN</a>
+              </div>
+            </div>
+
+            <div class="podcast-card">
+              <div class="podcast-card-image">
+                <img src="assets/images/universityhouse.jpg" alt="Scrivener Dam">
+              </div>
+              <div class="podcast-card-body">
+                <span class="podcast-ep-tag">Episode 18</span>
+                <h3 class="podcast-card-title">Scrivener Dam</h3>
+                <p class="podcast-card-desc">This brutalist beauty may not be everyone's cup of tea, but without it Canberra would look very different.</p>
+                <a href="#" class="podcast-listen-btn">LISTEN</a>
+              </div>
+            </div>
+
+            <div class="podcast-card">
+              <div class="podcast-card-image">
+                <img src="assets/images/nationalcarillon.png" alt="National Carillon">
+              </div>
+              <div class="podcast-card-body">
+                <span class="podcast-ep-tag">Episode 19</span>
+                <h3 class="podcast-card-title">National Carillon</h3>
+                <p class="podcast-card-desc">Rising from Aspen Island in Lake Burley Griffin, gifted by the British Government to mark Canberra's 50th anniversary.</p>
+                <span class="podcast-coming-soon">COMING SOON</span>
+              </div>
+            </div>
+
+            <div class="podcast-card">
+              <div class="podcast-card-image">
+                <img src="assets/images/shinedome.jpg" alt="The Shine Dome">
+              </div>
+              <div class="podcast-card-body">
+                <span class="podcast-ep-tag">Episode 20</span>
+                <h3 class="podcast-card-title">The Shine Dome</h3>
+                <p class="podcast-card-desc">One of Canberra's most recognisable buildings and a landmark of Australian modernist architecture.</p>
+                <span class="podcast-coming-soon">COMING SOON</span>
+              </div>
+            </div>
+
+            <div class="podcast-card">
+              <div class="podcast-card-image">
+                <img src="assets/images/dicksonlibrary.png" alt="Dickson Library">
+              </div>
+              <div class="podcast-card-body">
+                <span class="podcast-ep-tag">Episode 21</span>
+                <h3 class="podcast-card-title">Dickson Library</h3>
+                <p class="podcast-card-desc">A hidden gem of Canberra's modernist heritage, the Dickson Library represents community architecture at its finest.</p>
+                <span class="podcast-coming-soon">COMING SOON</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="podcast-arrow podcast-next" id="podcastNext" aria-label="Next">
+          <img src="assets/images/seemoreright.svg" alt="" class="arrow-light">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="newsletter">
+    <div class="footer-top">
+      <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="assets/images/seemoreright.svg" alt="" class="back-to-top-icon">
+        <span>BACK TO TOP</span>
+      </button>
+    </div>
+
+    <div class="footer-body">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="events.html">Events</a>
+        <a href="media.html">Media</a>
+      </nav>
+
+      <div class="footer-newsletter">
+        <p class="newsletter-heading">NEVER MISS A BEAT —<br>SIGN UP FOR OUR NEWSLETTER</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Email" class="newsletter-input" aria-label="Email address">
+          <button type="submit" class="newsletter-submit" aria-label="Submit">
+            <img src="assets/images/seemoreright.svg" alt="Submit" class="submit-arrow">
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-social">
+        <p class="social-heading">NEVER MISS AN UPDATE —<br>FOLLOW US ON OUR SOCIALS</p>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/images/instagramlogo.svg" alt="Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/images/facebooklogo.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-copyright">This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2026.<br>Canberra Modern Incorporated<br>All Rights Reserved</p>
+  </footer>
+
+  <!-- Mobile hamburger -->
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close">&#x2715;</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="events.html">Events</a>
+      <a href="media.html">Media</a>
+    </nav>
+  </div>
+
+  <script src="assets/js/javascript.js"></script>
+</body>
+</html>
