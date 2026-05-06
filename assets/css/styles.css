@@ -932,6 +932,25 @@ footer {
   color: var(--off-white);
 }
 
+.building-caption-address {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--tan);
+  margin-bottom: 2px;
+}
+
+.building-caption-note {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #8a8a84;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 /* Scroll progress dots */
 .scroll-dots {
   display: flex;
