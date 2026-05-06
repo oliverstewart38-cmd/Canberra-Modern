@@ -128,6 +128,17 @@ if (highlightsTrack && highlightsDots && highlightsNext) {
 
   highlightsNext.addEventListener('click', () => goTo(current + 1));
   if (highlightsPrev) highlightsPrev.addEventListener('click', () => goTo(current - 1));
+
+  // Swipe support for mobile
+  let touchStartX = 0;
+  highlightsTrack.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  highlightsTrack.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  }, { passive: true });
 }
 
 // Carousel: see-more arrow scrolls to next card on mobile

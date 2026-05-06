@@ -1417,6 +1417,19 @@ footer {
     height: 280px;
   }
 
+  .highlights-prev,
+  .highlights-next {
+    display: none;
+  }
+
+  .highlights-carousel {
+    width: 100%;
+  }
+
+  .highlights-dots {
+    width: 100%;
+  }
+
   /* ---- PAGE HERO ---- */
   .page-hero {
     padding-bottom: 32px;
