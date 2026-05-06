@@ -1372,7 +1372,7 @@ footer {
 
 /* ===== PODCAST CAROUSEL ===== */
 .podcast-section {
-  background-color: var(--charcoal);
+  background-color: var(--off-white);
   padding: 0;
 }
 
@@ -1382,7 +1382,7 @@ footer {
   font-size: 45px;
   line-height: 50px;
   letter-spacing: -0.5px;
-  color: var(--off-white);
+  color: var(--stone);
   margin-bottom: 12px;
 }
 
@@ -1391,7 +1391,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
-  color: var(--tan);
+  color: var(--slate);
   margin-bottom: 40px;
 }
 
@@ -1508,12 +1508,6 @@ footer {
 }
 
 .podcast-arrow:hover { opacity: 0.7; }
-
-.arrow-light {
-  width: 100%;
-  height: 100%;
-  filter: brightness(0) invert(1);
-}
 
 .arrow-flip {
   transform: rotate(180deg);
