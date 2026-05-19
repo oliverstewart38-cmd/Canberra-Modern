@@ -162,18 +162,4 @@ if (podcastTrack && podcastNext && podcastPrev) {
   podcastPrev.addEventListener('click', () => podcastGoTo(podcastIndex - 1));
 }
 
-// Carousel: see-more arrow scrolls to next card on mobile
-document.querySelectorAll('.see-more-btn').forEach(btn => {
-  btn.addEventListener('click', function (e) {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      const grid = this.previousElementSibling;
-      if (grid && grid.classList.contains('cards-grid')) {
-        const firstCard = grid.firstElementChild;
-        const cardWidth = firstCard ? firstCard.offsetWidth + 20 : 272;
-        const atEnd = grid.scrollLeft + grid.offsetWidth >= grid.scrollWidth - 10;
-        grid.scrollBy({ left: atEnd ? -grid.scrollWidth : cardWidth, behavior: 'smooth' });
-      }
-    }
-  });
-});
+// See more buttons always navigate to their linked page

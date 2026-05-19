@@ -1041,6 +1041,8 @@ footer {
   display: flex;
   height: 560px;
   background-color: var(--cream);
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 .featured-event-image-col {
@@ -1873,6 +1875,37 @@ footer {
 
   .building-photo {
     height: 280px;
+  }
+
+  /* ---- PODCAST CAROUSEL ---- */
+  .podcast-carousel-wrapper {
+    gap: 0;
+  }
+
+  .podcast-arrow {
+    display: none;
+  }
+
+  .podcast-viewport {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .podcast-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .podcast-track {
+    transform: none !important;
+    gap: 16px;
+    padding: 0 20px 4px;
+  }
+
+  .podcast-card {
+    flex: 0 0 80vw;
+    scroll-snap-align: start;
   }
 
   /* ---- EVENTS ---- */
