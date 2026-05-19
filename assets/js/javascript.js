@@ -1,11 +1,4 @@
 
-// Back to top
-const backToTop = document.querySelector('.back-to-top');
-if (backToTop) {
-  backToTop.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
 
 // Newsletter form
 const newsletterForm = document.querySelector('.newsletter-form');
@@ -162,4 +155,3 @@ if (podcastTrack && podcastNext && podcastPrev) {
   podcastPrev.addEventListener('click', () => podcastGoTo(podcastIndex - 1));
 }
 
-// See more buttons always navigate to their linked page
