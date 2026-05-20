@@ -861,7 +861,7 @@ footer {
 .building-scroll {
   display: flex;
   gap: 60px;
-  width: %;
+  width: 100%;
   padding-left: max(28px, calc(50vw - 692px));
   padding-right: max(28px, calc(50vw - 692px));}
   
