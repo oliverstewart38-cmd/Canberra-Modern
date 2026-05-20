@@ -861,9 +861,10 @@ footer {
 .building-scroll {
   display: flex;
   gap: 60px;
-  width: 50%;
+  width: %;
   padding-left: max(28px, calc(50vw - 692px));
   padding-right: max(28px, calc(50vw - 692px));}
+  
 
 .building-card {
   width: 680px;
