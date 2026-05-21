@@ -1699,6 +1699,116 @@ footer {
   transform: rotate(180deg);
 }
 
+/* ===== TABLET RESPONSIVE ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* ---- NAVBAR ---- */
+  .nav-links {
+    gap: 24px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  /* ---- HERO ---- */
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero-content {
+    min-height: 660px;
+  }
+
+  .hero-image-left {
+    width: 220px;
+    height: 186px;
+    left: 28px;
+    top: 70px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    line-height: 48px;
+    width: 560px;
+    top: 270px;
+  }
+
+  .hero-image-right {
+    width: 320px;
+    height: 216px;
+    right: 28px;
+    top: 370px;
+  }
+
+  .hero-description {
+    top: 550px;
+    width: 320px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* ---- SECTIONS ---- */
+  .section-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  /* ---- CARDS ---- */
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---- PAGE TITLES ---- */
+  .page-title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  /* ---- ABOUT ---- */
+  .about-heading {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .about-body {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .partners-heading,
+  .orgs-heading {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  /* ---- ORG GRID ---- */
+  .org-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---- FOOTER ---- */
+  .footer-body {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-social {
+    grid-column: span 2;
+    align-items: flex-start;
+  }
+
+  .footer-nav a {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
 
