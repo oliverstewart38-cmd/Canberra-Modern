@@ -363,8 +363,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  background: none;
-  border: none;
   cursor: pointer;
   color: var(--cream);
   font-family: var(--font-heading);
@@ -1321,18 +1319,25 @@ footer {
 }
 
 .highlights-viewport {
-  overflow: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   flex: 1;
+}
+
+.highlights-viewport::-webkit-scrollbar {
+  display: none;
 }
 
 .highlights-track {
   display: flex;
-  transition: transform 0.4s ease;
 }
 
 .highlight-slide {
   flex: 0 0 100%;
   height: 560px;
+  scroll-snap-align: start;
 }
 
 .highlight-slide img {
@@ -1588,18 +1593,25 @@ footer {
 }
 
 .podcast-viewport {
-  overflow: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   flex: 1;
+}
+
+.podcast-viewport::-webkit-scrollbar {
+  display: none;
 }
 
 .podcast-track {
   display: flex;
   gap: 28px;
-  transition: transform 0.4s ease;
 }
 
 .podcast-card {
   flex: 0 0 calc(33.333% - 19px);
+  scroll-snap-align: start;
   background-color: #2e2e2c;
   border: 4px solid var(--cream);
   border-radius: 2px;
@@ -2015,7 +2027,6 @@ footer {
   }
 
   .podcast-track {
-    transform: none !important;
     gap: 16px;
     padding: 0 20px 4px;
   }
