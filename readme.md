@@ -1,12 +1,27 @@
-# Rational
-The intention of my website was to take the current content of the canberra medoern website and create a website that is able to provide all the same information aand and push the same content but in a way that was clear and easy for people to understand. My overall design of the website has stayed pretty true to the prototype, things like the colours, typography and layout and navigation have stayed the very similar. In terms of the layout of the website I think it is succesfull at breaking up the informatiopn into easy to view sections that ensures users are not overwhelmed with too much information at a time. The website also follows the prototype fairly closerly in terms of navigation which is designed to be straight forwards and simple to avoiud overwhelming users with choices. One significant change to the orignal design was swapping the term media for podcasts. This made clearer to people what the page was and what they can expect when they go tghere. It also one of Canberramoderns most significant content pieces so its important for it to be easy to find. The hero section of the home page could be improved, I think a design that uses larger images as the main focus point would of been better and created a hero seciton that is more eye catching when peopl join
+# Rationale
 
 ## Responsive Design
-My website was designed with mobile, tablet and desktop in mind. The website is a desktop first appraoch and scales down/adjusts to the smaller screen sizes. The biggest challenge when scaling to mobile is finding a way to make all the content fit onto the screen in an easy to read manner. 
-## Low-fi prototypes 
+My website was designed with mobile, tablet and desktop in mind, with multiple breakpoints to handle each. The approach is desktop-first, scaling down and adjusting to smaller screen sizes. The biggest challenge when scaling to mobile was fitting all the content onto the screen in a clear, easy-to-read way while keeping navigation accessible.
+
+Multiple CSS techniques were used to achieve this. CSS Grid handles the main layout sections, with the number of columns reducing as the screen gets smaller. Card grids go from four columns on desktop, to two on tablet, to a horizontal scroll on mobile. Flexbox is used for things like navigation and card internals to keep elements aligned correctly at any width.
+
+One key part of the responsive design is the mobile navigation. On smaller screens, the main nav is hidden and replaced with a fixed-position button in the bottom-left corner. Fixed positioning means it stays visible as the user scrolls. Clicking it opens a full-screen overlay, controlled by JavaScript toggling a CSS class to show and hide the menu. Placing it bottom-left means users can reach it comfortably with one hand. Another responsive technique used is CSS scroll-snap, which turns the card sections into swipeable horizontal carousels on mobile with no JavaScript required.
+
+
+# Low-fi Prototypes
+The overall design stayed close to the prototype. The colour palette, typography and layout transferred well into code, and the navigation kept the same simple structure as the prototype. One deliberate change was renaming the "Media" page to "Podcast," which made the page purpose immediately clear and better reflected the content, since the podcast series is one of Canberra Modern's most significant offerings.
+
+One thing I would improve is the hero section. The current design uses absolutely positioned images over a dark background, which worked on desktop but required a significant restructure for mobile. A grid-based hero using larger images as the main focal point would have been more visually striking and easier to make responsive from the start.
+
+[Figma prototype — link to be added]
+
 
 ## Use of Generative AI
+Generative AI was used at certain stages of the website's production. The main use was converting the Figma prototype into a base HTML and CSS structure with some JavaScript. Claude Code (Sonnet 4.6) was used specifically for this, as it can link directly to a Figma file and generate code based on the design. This gave me a strong starting point that I then adjusted and improved — including rewriting sections to use CSS rather than JavaScript, such as converting the event highlights and podcast carousels from JS-driven translateX transforms to CSS scroll-snap and replacing the back-to-top button's inline JavaScript with a plain anchor link.
 
+Using AI also made me more aware of certain CSS features. Reviewing the generated code helped me better understand the difference between position: fixed and position: absolute and how each is applied — for example, why the mobile menu button uses fixed positioning, so it stays on screen while scrolling. It also introduced me to CSS scroll-snap; once I understood how it worked, I was able to apply it in more places than the AI originally had and remove JavaScript that wasn't needed.
+
+The JavaScript in the site is largely AI-generated. With AI assistance I've developed an understanding of when JavaScript is the right tool and how individual functions work, but I'm not yet at a point where I could write complex JavaScript independently without support.
 
 
 ## References
