@@ -13,7 +13,7 @@ The overall design stayed close to the prototype. The colour palette, typography
 
 One thing I would improve is the hero section. The current design uses absolutely positioned images over a dark background, which worked on desktop but required a significant restructure for mobile. A grid-based hero using larger images as the main focal point would have been more visually striking and easier to make responsive from the start.
 
-[Figma prototype — link to be added]
+### Figma Link: https://www.figma.com/design/Px7cC8TX0DhE3GkaOgWyVM/Canberra-Modern-Redesign-A2?node-id=0-1&t=1D07251i0SPmUqSt-1
 
 
 ## Use of Generative AI
