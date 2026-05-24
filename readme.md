@@ -1,5 +1,5 @@
 # Rationale
-
+### Live Link: https://oliverstewart38-cmd.github.io/Canberra-Modern/
 ## Responsive Design
 My website was designed with mobile, tablet and desktop in mind, with multiple breakpoints to handle each. The approach is desktop-first, scaling down and adjusting to smaller screen sizes. The biggest challenge when scaling to mobile was fitting all the content onto the screen in a clear, easy-to-read way while keeping navigation accessible.
 
@@ -8,7 +8,7 @@ Multiple CSS techniques were used to achieve this. CSS Grid handles the main lay
 One key part of the responsive design is the mobile navigation. On smaller screens, the main nav is hidden and replaced with a fixed-position button in the bottom-left corner. Fixed positioning means it stays visible as the user scrolls. Clicking it opens a full-screen overlay, controlled by JavaScript toggling a CSS class to show and hide the menu. Placing it bottom-left means users can reach it comfortably with one hand. Another responsive technique used is CSS scroll-snap, which turns the card sections into swipeable horizontal carousels on mobile with no JavaScript required.
 
 
-# Low-fi Prototypes
+## Low-fi Prototypes
 The overall design stayed close to the prototype. The colour palette, typography and layout transferred well into code, and the navigation kept the same simple structure as the prototype. One deliberate change was renaming the "Media" page to "Podcast," which made the page purpose immediately clear and better reflected the content, since the podcast series is one of Canberra Modern's most significant offerings.
 
 One thing I would improve is the hero section. The current design uses absolutely positioned images over a dark background, which worked on desktop but required a significant restructure for mobile. A grid-based hero using larger images as the main focal point would have been more visually striking and easier to make responsive from the start.
@@ -25,6 +25,23 @@ The JavaScript in the site is largely AI-generated. With AI assistance I've deve
 
 
 ## References
+MDN Web Docs. (n.d.). CSS grid layout. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+Useful reference for understanding grid layout, used when structuring the card grids, footer and about sections.
 
+MDN Web Docs. (n.d.). CSS flexible box layout. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+Useful resource for understanding flexbox and troubleshooting alignment issues across the site.
 
-## Links
+MDN Web Docs. (n.d.). scroll-snap-type. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+Helped me understand how scroll-snap works and how it could be applied in different ways, which led to replacing JavaScript carousels with a CSS-only solution.
+
+MDN Web Docs. (n.d.). position. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/position
+Used as an important refresher on CSS positioning and helped me decide when to use fixed versus absolute, particularly for the hero section and mobile navigation button.
+
+MDN Web Docs. (n.d.). Using CSS custom properties. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+Showed me how to create a reusable colour palette using custom properties rather than repeating hex codes throughout the stylesheet.
+
+W3C. (n.d.). Markup validation service. World Wide Web Consortium. https://validator.w3.org/
+Used to check HTML validity across all pages before submission.
+
+Google. (n.d.). Google Fonts. https://fonts.google.com/
+Source for the Jost and Nunito Sans typefaces used across the site for headings and body text respectively.
