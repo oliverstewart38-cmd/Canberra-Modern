@@ -1001,12 +1001,13 @@ footer {
 
 .events-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 42px;
   align-items: stretch;
 }
 
 .events-grid > .event-card-large {
-  flex: 1;
+  flex: 0 0 calc(33.333% - 28px);
   min-width: 0;
 }
 
